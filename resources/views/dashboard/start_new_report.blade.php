@@ -20,12 +20,12 @@
 <div class="container">
    
    <div class="row">
-   <div class="col-lg-3">
+   <div class="col-lg-2">
       
       </div>
    
        
-      <div class="col-lg-9">
+      <div class="col-lg-10">
         <div class="row">
            <div class="card">
                <div class="card-header" style="background-color:#2f1b47 !important; color:white; width:100%">
