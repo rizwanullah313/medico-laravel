@@ -9,6 +9,45 @@
       padding: 10px;
       min-height: 200px;
     }
+    .btn_groups {
+        display: flex;
+        /* margin-top: ; */
+        flex-direction:row;
+    }
+    .btn-info {
+        background-color: white !important;
+        width: 100%;
+        margin: 2px !important;
+        /* border: 2px solid #F2CC00 !important; */
+        border: 2px solid #2f1b47 !important;
+        /* color: #F2CC00 !important; */
+        color: #2f1b47 !important;
+        padding: 7px !important;
+        border-radius: 0px !important;
+    }
+
+    .btn-info:hover {
+        /* background-color: #F2CC00 !important; */
+        background-color: #2f1b47 !important;
+        width: 100%;
+        margin: 2px !important;
+        /* border: 2px solid #F2CC00 !important;*/
+        border: 2px solid #2f1b47 !important;
+        color: white !important;
+        border-radius: 0px !important;
+    }
+
+    .btn-info:active {
+        /* background-color: #F2CC00 !important; */
+        background-color: #2f1b47 !important;
+        width: 100%;
+        margin: 2px !important;
+        /* border: 2px solid #F2CC00 !important; */
+        border: 2px solid #2f1b47 !important;
+        color: white !important;
+        border-radius: 0px !important;
+    }
+
 </style>
 
 @endsection
@@ -40,12 +79,11 @@
 
                   <div class="col-lg-6">
                      <div class="row">
-                       
-                        <div class="col-lg-12 btn-group" role="group" style="display:flex;flex-wrap:wrap;padding:10px;">
-                            <h5>Please Select</h5>
-                            <button type="radio" class="btn btn-success" name="agency_btn">Agency.</button>
-                            <button type="radio" class="btn btn-success" name="agency_btn">Solicator.</button>
-                            <button type="radio" class="btn btn-success" name="agency_btn">Solicator via Agency.</button>
+                        <div class="col-lg-12 btn-group" role="group" style="display:flex;padding:10px;">
+                            <h5 class="h5 mx-auto" style="">Please Select</h5>
+                            <button type="radio" class="btn btn-info" name="agency_btn">Agency.</button>
+                            <button type="radio" class="btn btn-info" name="agency_btn">Solicator.</button>
+                            <button type="radio" class="btn btn-info" name="agency_btn">Solicator via Agency.</button>
                         </div>
                      </div>
                   </div>
@@ -57,7 +95,7 @@
                            <h5>Agency</h5>
                         </div>
                         <div>
-                        <select name="" id="">
+                        <select name="" id="" class="form-select">
                               <option value="">test</option>
                            </select>
                         </div>
@@ -71,7 +109,7 @@
                         <h5>Agency Ref</h5>
                      </div>
                      <div>
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="" class="form-control">
                      </div>
                      </div>
 
@@ -84,7 +122,7 @@
                            <h5>Solicator</h5>
                         </div>
                         <div>
-                           <select name="" id="">
+                           <select name="" id="" class="form-select">
                               <option value="">test</option>
                            </select>
                         </div>         
@@ -98,7 +136,7 @@
                            <h5>Solicitor Ref</h5>
                         </div>
                         <div>
-                           <input type="text" name="" id="">
+                           <input type="text" name="" id="" class="form-control">
                         </div>
                     </div>
 
@@ -120,9 +158,9 @@
                            <h5>Medco Patient</h5>
                         </div>
                         <div>
-                           <div class="col-lg-12 btn-group" role="group" style="display:flex;flex-wrap:wrap;">
-                            <button type="radio" class="btn btn-success" name="medco_patient1">Yes</button>
-                            <button type="radio" class="btn btn-success" name="medco_patient1">No</button>
+                           <div class="col-lg-12 btn-group" role="group" style="display:flex;">
+                            <button type="radio" class="btn btn-info" name="medco_patient1">Yes</button>
+                            <button type="radio" class="btn btn-info" name="medco_patient1">No</button>
                            </div>
                         </div>
                      </div>
@@ -137,13 +175,13 @@
                   <div class="col-lg-6">
                      <div class="row">
                        
-                        <div class="col-lg-12 btn-group" role="group" style="display:flex;flex-wrap:wrap;padding:10px;">
+                        <div class="col-lg-12 btn-group" role="group" style="display:flex;padding:10px;">
                             <h5>Title</h5>
-                            <button type="radio" class="btn btn-success" name="title">Mr.</button>
-                            <button type="radio" class="btn btn-success" name="title">Mrs.</button>
-                            <button type="radio" class="btn btn-success" name="title">Miss.</button>
-                            <button type="radio" class="btn btn-success" name="title">Ms.</button>
-                            <button type="radio" class="btn btn-success" name="title">Master.</button>
+                            <button type="radio" class="btn btn-info" name="title">Mr.</button>
+                            <button type="radio" class="btn btn-info" name="title">Mrs.</button>
+                            <button type="radio" class="btn btn-info" name="title">Miss.</button>
+                            <button type="radio" class="btn btn-info" name="title">Ms.</button>
+                            <button type="radio" class="btn btn-info" name="title">Master.</button>
 
                         </div>
                      </div>
@@ -201,7 +239,7 @@
                            <label for="">PostCode</label>
                         </div>
                         <div>
-                           <input type="text" name="" id="">
+                           <input type="text" name="" id="" class="form-control">
                         </div>
                       </div>
 
@@ -210,7 +248,7 @@
                            <label for="">Contact No</label>
                         </div>
                         <div>
-                           <input type="text" name="" id="">
+                           <input type="text" name="" id="" class="form-control">
                         </div>
                       </div>
 
@@ -237,9 +275,9 @@
                         <label for="">Hospital Record Needs To Be Reviewed</label>
                       </div>
                       
-                      <div class="btn-group" role="group" style="display:flex;flex-wrap:wrap;">
-                            <button type="radio" class="btn btn-success" name="yes_no1">Yes</button>
-                            <button type="radio" class="btn btn-success" name="yes_no1">No</button>
+                      <div class="btn-group" role="group" style="display:flex;">
+                            <button type="radio" class="btn btn-info" name="yes_no1">Yes</button>
+                            <button type="radio" class="btn btn-info" name="yes_no1">No</button>
                         </div>
                   </div>
 
@@ -248,9 +286,9 @@
                         <label for="">GP Record Needs To Be Reviewed</label>
                       </div>
                       
-                      <div class="btn-group" role="group" style="display:flex;flex-wrap:wrap;">
-                            <button type="radio" class="btn btn-success" name="yes_no2">Yes</button>
-                            <button type="radio" class="btn btn-success" name="yes_no2">No</button>
+                      <div class="btn-group" role="group" style="display:flex;">
+                            <button type="radio" class="btn btn-info" name="yes_no2">Yes</button>
+                            <button type="radio" class="btn btn-info" name="yes_no2">No</button>
                         </div>
                   </div>
 
