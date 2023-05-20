@@ -64,8 +64,9 @@
       </div>
    
        
-      <div class="col-lg-10">
+      <div class="col-lg-10"> 
         <div class="row">
+         <a href="{{route('show_dashboard')}}"><button class="btn btn-info" style="width:100px">Go Back</button></a>
            <div class="card">
                <div class="card-header" style="background-color:#2f1b47 !important; color:white; width:100%">
                    <h3 class="text-center">Add Client</h3>

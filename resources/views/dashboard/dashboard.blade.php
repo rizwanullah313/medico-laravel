@@ -36,20 +36,20 @@
                      <!-- <a href="{{route('start_new_report')}}">Start New Report</a> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
+                    <a href="{{route('my_cases')}}">
                         <img src="{{ asset('/images/2_new.png') }}" alt="">
                     </a>
                     <!-- <a href="">My Cases</a> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
+                    <a href="{{route('my_invoices')}}">
                         <img src="{{ asset('/images/3_new.png') }}" alt="">
                     </a>
                     <!-- <a href="">My Invoices</a> -->
                 </div>
            
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <a href="">
+                    <a href="{{route('setting')}}">
                         <img src="{{ asset('/images/4_new.png') }}" alt="">
                     </a>
                     <!-- <a href="">Setting</a> -->
